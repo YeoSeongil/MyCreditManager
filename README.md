@@ -2,6 +2,8 @@
 > ✏️ 프로젝트 이름 : MyCreditManager<br>
 > 🗓️ 과제 수행일 : 23.04.21 Fri<br>
 > ⚒️ 사용 언어 / 환경 : Swift, Xcode<br>
+#### [사전과제 홈페이지](https://yagomacademy.notion.site/iOS-ba2d0c0bb0b949c896cc28567706e969)
+#### [사전과제 풀이](https://yeoseongil.tistory.com)
 # MyCreditManager
 > ### 프로그램의 메뉴
 > 1. 학생추가
@@ -58,4 +60,6 @@
 
 ![image](https://user-images.githubusercontent.com/75207506/233631670-76ba5f11-5187-4864-86ca-5305655ba96e.png)
 ### 종료
-- 
+- 프로그램을 종료합니다
+
+![image](https://user-images.githubusercontent.com/75207506/233632230-0335ddd9-6c1f-4b5a-8390-393032c7b826.png)
