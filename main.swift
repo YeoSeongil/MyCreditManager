@@ -53,11 +53,15 @@ func addStu() {
 func delStu() {
     print("삭제할 학생의 이름을 입력해주세요")
     let input = readLine()!
-    if let stuIndex = stuArr.firstIndex(where: {$0.name == input}) {
-        stuArr.remove(at: stuIndex)
-        print("\(input) 학생을 삭제하였습니다.")
+    if input != "" && input != " " {
+        if let stuIndex = stuArr.firstIndex(where: {$0.name == input}) {
+            stuArr.remove(at: stuIndex)
+            print("\(input) 학생을 삭제하였습니다.")
+        } else {
+            print("\(input) 학생을 찾지 못했습니다.")
+        }
     } else {
-        print("\(input) 학생을 찾지 못했습니다.")
+        print("입력이 잘못되었습니다. 다시 확인해주세요.")
     }
 }
 
@@ -94,6 +98,8 @@ func delGrade() {
         } else {
             print("\(stuName) 학생을 찾지 못했습니다.")
         }
+    } else {
+        print("입력이 잘못되었습니다. 다시 확인해주세요.")
     }
 }
 
@@ -101,11 +107,14 @@ func viewRating() {
     print("평점을 알고싶은 학생의 이름을 입력해주세요")
     
     let input = readLine()!
-    
-    if let stuIndex = stuArr.first(where: { $0.name == input }) {
-        stuIndex.calcRating()
+    if input != "" && input != " " {
+        if let stuIndex = stuArr.first(where: { $0.name == input }) {
+            stuIndex.calcRating()
+        } else {
+            print("\(input) 학생을 찾지 못했습니다.")
+        }
     } else {
-        print("\(input) 학생을 찾지 못했습니다.")
+        print("입력이 잘못되었습니다. 다시 확인해주세요.")
     }
 }
 
