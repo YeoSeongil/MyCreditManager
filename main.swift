@@ -31,8 +31,8 @@ struct Student {
 
 var stuArr: [Student] = [] // 학생 배열
 
-let gradeRating: [String: Float] = ["A+":4.5, "A":4.0, "B+":3.5, "B":3.0, "C+":2.5, "C":2.0,
-                                    "D+":1.5, "D":1.0, "F":0]
+let gradeRating: [String: Float] = ["A+":4.5, "A":4.0, "B+":3.5, "B":3.0, "C+":2.5, "C":2.0,"D+":1.5, "D":1.0, "F":0]
+
 // 학생 추가 함수
 func addStu() {
     print("추가할 학생의 이름을 입력해주세요")
