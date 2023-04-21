@@ -37,11 +37,15 @@ let gradeRating: [String: Float] = ["A+":4.5, "A":4.0, "B+":3.5, "B":3.0, "C+":2
 func addStu() {
     print("추가할 학생의 이름을 입력해주세요")
     let input = readLine()! // readLine()은 리턴 값이 옵셔널이므로 언래핑, 값이 확실하므로 !로 강제언래핑함
-    if stuArr.contains(where: { $0.name == input }) { // 클로저로 축약
-        print("\(input)은 이미 존재하는 학생입니다. 추가하지 않습니다.")
+    if input != "" && input != " " {
+        if stuArr.contains(where: { $0.name == input }) { // 클로저로 축약
+            print("\(input)은 이미 존재하는 학생입니다. 추가하지 않습니다.")
+        } else {
+            stuArr.append(.init(name: input))
+            print("\(input) 학생을 추가했습니다.")
+        }
     } else {
-        stuArr.append(.init(name: input))
-        print("\(input) 학생을 추가했습니다.")
+        print("입력이 잘못되었습니다. 다시 확인해주세요.")
     }
 }
 
