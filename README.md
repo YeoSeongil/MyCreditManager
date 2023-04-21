@@ -1,7 +1,7 @@
 # 원티드 프리온보딩 챌린지 iOS과정 사전과제
-✏️ 프로젝트 이름 : MyCreditManager<\br>
-🗓️ 과제 수행일 : 23.04.21 Fri<\br>
-⚒️ 사용 언어 / 환경 : Swift, Xcode<\br>
+✏️ 프로젝트 이름 : MyCreditManager<br>
+🗓️ 과제 수행일 : 23.04.21 Fri<br>
+⚒️ 사용 언어 / 환경 : Swift, Xcode<br>
 
 # MyCreditManager
 ## 프로그램의 메뉴
